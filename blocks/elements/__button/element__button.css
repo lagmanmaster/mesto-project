@@ -1,0 +1,18 @@
+.element__button {
+    margin: 0;
+    padding: 0;
+    background: transparent url(../../../images/Vector-Stroke.png);
+    width: 22px;
+    height: 19px;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+.element__button:hover{
+    opacity: .5;
+    transition: .3s ease;
+}
+.element__button:active{
+    background: transparent url(../../../images/Union.png);
+    opacity: 1;
+}

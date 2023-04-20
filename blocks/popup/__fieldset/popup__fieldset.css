@@ -1,0 +1,11 @@
+.popup__fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 36px 37px 36px;
+    border: none;
+  }
+@media (max-width:530px){
+  .popup__fieldset {
+    padding: 25px 22px;
+  }
+}
