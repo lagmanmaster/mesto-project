@@ -9,24 +9,28 @@
     align-items: center;
     width: 100%;
 }
-@media (max-width: 1120px){
+
+@media (max-width: 1120px) {
     .profile {
         width: calc(100% - 60px);
     }
 }
-@media (max-width: 1024px){
+
+@media (max-width: 1024px) {
     .profile {
         width: calc(100% - 100px);
         align-self: center;
     }
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
     .profile {
         flex-direction: column;
         width: 100%;
     }
 }
-@media (max-width: 530px){
+
+@media (max-width: 530px) {
     .profile {
         max-width: 282px;
         padding-bottom: 36px;

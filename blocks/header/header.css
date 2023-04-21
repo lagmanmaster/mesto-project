@@ -8,29 +8,33 @@
     margin-bottom: 40px;
     margin-top: 45px;
     width: calc(100% - 300px);
-    
+
 }
-@media (max-width: 1120px){
+
+@media (max-width: 1120px) {
     .header {
         width: calc(100% - 200px);
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .header {
         width: calc(100% - 100px);
     }
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
     .header {
         width: calc(100% - 70px);
     }
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     .header {
         max-width: 320px;
         width: calc(100% - 1%);
         padding-top: 28px;
-        
+
         margin: 0;
         margin-bottom: 42px;
     }

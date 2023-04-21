@@ -6,19 +6,21 @@
     font-weight: 500;
     font-size: 42px;
     line-height: 48px;
-    color: #FFFFFF;
-    max-width: 295px;
+    color: #fff;
+    max-width: 250px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-@media (max-width:530px){
+
+@media (max-width:530px) {
     .profile__title {
         font-size: 33px;
         line-height: 39px;
     }
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     .profile__title {
         font-size: 27px;
         line-height: 33px;

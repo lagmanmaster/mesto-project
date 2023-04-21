@@ -3,7 +3,7 @@
     height: 50px;
     padding: 0;
     margin: 0;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #fff;
     border-radius: 2px;
     box-sizing: border-box;
     background: transparent url(../../../images/Vector-plus.svg) 50%;
@@ -11,16 +11,19 @@
     object-fit: contain;
     cursor: pointer;
 }
+
 .profile__add-button:hover {
     opacity: .6;
     transition: .3s ease;
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
     .profile__add-button {
         width: 282px;
     }
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     .profile__add-button {
         width: 100%;
         background-size: 16px;

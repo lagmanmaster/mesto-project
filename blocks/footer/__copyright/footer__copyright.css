@@ -11,7 +11,8 @@
     color: #545454;
 
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     .footer__copyright {
         max-width: calc(100% - 19px * 2);
         font-size: 14px;
