@@ -14,5 +14,6 @@
     .profile__user-menu {
        flex-direction: column;
        align-items: center;
+       padding-bottom: 0;
     }
 }

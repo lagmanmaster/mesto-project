@@ -1,17 +1,23 @@
 .popup__close{
-    background-color: transparent;
-    transform: rotate(45deg);
+  background: transparent url(../../../images/CloseIcon.svg);
+  background-size: contain;
     color: #fff;
     width: 32px;
     height: 32px;
-    font-size: 60px;
-    transform: rotate(45deg);
     border: none;
     position: absolute;
-    top: -60px;
+    top: -40px;
     right: -40px;
+    cursor: pointer;
   }
 .popup__close:hover{
     opacity: .6;
     transition: .3s ease;
+}
+@media (max-width:400px){
+  .popup__close{
+    right: 0;
+    width: 20px;
+    height: 20px;
+  }
 }

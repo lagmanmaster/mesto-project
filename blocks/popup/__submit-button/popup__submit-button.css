@@ -2,7 +2,7 @@
     background-color: #000;
     color: #fff;
     max-width: 358px;
-    height: 50px;
+    min-height: 50px;
     box-sizing: border-box;
     border: none;
     border-radius: 2px;
@@ -13,6 +13,7 @@
     line-height: 22px;
     text-align: center;
     margin-top: 48px;
+    cursor: pointer;
   }
 .popup__submit-button:hover{
     opacity: .8;

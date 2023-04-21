@@ -1,4 +1,4 @@
-.element__cards {
+.elements__cards {
     padding: 0;
     margin: 0 auto;
     max-width: 880px;
@@ -10,12 +10,12 @@
     row-gap: 20px;
 }
 @media (max-width:1024px){
-    .element__cards{
+    .elements__cards{
         grid-template-columns: repeat(2,1fr);
     }
 }
 @media (max-width:768px){
-    .element__cards{
+    .elements__cards{
         display: flex;
         flex-direction: column;
         column-gap: 0;
