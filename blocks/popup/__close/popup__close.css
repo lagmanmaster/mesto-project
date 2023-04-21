@@ -1,4 +1,4 @@
-.popup__close{
+.popup__close {
   background: transparent url(../../../images/CloseIcon.svg);
   background-size: contain;
     color: #fff;
@@ -10,12 +10,12 @@
     right: -40px;
     cursor: pointer;
   }
-.popup__close:hover{
+.popup__close:hover {
     opacity: .6;
     transition: .3s ease;
 }
-@media (max-width:400px){
-  .popup__close{
+@media (max-width: 400px){
+  .popup__close {
     right: 0;
     width: 20px;
     height: 20px;

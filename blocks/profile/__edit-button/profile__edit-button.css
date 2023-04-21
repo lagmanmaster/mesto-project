@@ -7,11 +7,11 @@
     background-position: center;
     cursor: pointer;
 }
-.profile__edit-button:hover{
+.profile__edit-button:hover {
     opacity: .6;
     transition: .3s ease;
 }
-@media (max-width:530px){
+@media (max-width: 530px){
     .profile__edit-button {
         height: 19px;
         width: 19px;

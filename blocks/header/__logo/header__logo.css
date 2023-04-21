@@ -1,12 +1,12 @@
-.header__logo{
+.header__logo {
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 41px;
     padding: 0;
     max-width: 142px;
 }
-@media (max-width:500px){
-    .header__logo{
+@media (max-width: 500px){
+    .header__logo {
         margin-bottom: 32px;
         max-width: 104px;
         margin-left: 27px;

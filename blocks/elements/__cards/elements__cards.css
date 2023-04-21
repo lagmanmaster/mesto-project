@@ -9,21 +9,15 @@
     column-gap: 17px;
     row-gap: 20px;
 }
-@media (max-width:1024px){
-    .elements__cards{
+@media (max-width: 1024px){
+    .elements__cards {
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media (max-width:768px){
-    .elements__cards{
+@media (max-width: 768px){
+    .elements__cards {
         display: flex;
         flex-direction: column;
         column-gap: 0;
     }
 }
-/* @media (max-width:320px){
-    .element__cards{
-        max-width: calc(100% - 19px * 2);
-        grid-template-columns: repeat(1,1fr);
-    }
-} */

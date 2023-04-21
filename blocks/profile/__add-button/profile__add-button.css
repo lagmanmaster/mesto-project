@@ -11,16 +11,16 @@
     object-fit: contain;
     cursor: pointer;
 }
-.profile__add-button:hover{
+.profile__add-button:hover {
     opacity: .6;
     transition: .3s ease;
 }
-@media (max-width:800px){
+@media (max-width: 800px){
     .profile__add-button {
         width: 282px;
     }
 }
-@media (max-width:320px){
+@media (max-width: 320px){
     .profile__add-button {
         width: 100%;
         background-size: 16px;

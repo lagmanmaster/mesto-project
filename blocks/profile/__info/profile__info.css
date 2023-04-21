@@ -8,16 +8,16 @@
     row-gap: 16px;
     align-items: center;
 }
-@media (max-width:530px){
-    .profile__info{
+@media (max-width: 530px){
+    .profile__info {
         column-gap: 8px;
         row-gap: 14px;
         padding-bottom: 36px;
         padding-top: 26px;
     }
 }
-@media (max-width:320px){
-    .profile__info{
+@media (max-width: 320px){
+    .profile__info {
         padding-left: 0;
     }
 

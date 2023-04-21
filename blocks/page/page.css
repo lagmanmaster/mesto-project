@@ -1,10 +1,10 @@
-.page{
+.page {
     margin: 0 auto;
     max-width: 1280px;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     padding: 0;
-    background: #000000;
-    color: #FFFFFF;
+    background: #000;
+    color: #FFF;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
