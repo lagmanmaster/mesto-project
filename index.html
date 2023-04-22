@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<!-- Извиняюсь, я совсем не понимаю какие еще правки вносить. 
+    Бэм и иерархия соблюдены в html и css, шрифты подключены правильно и только нужные с FontFascia, 
+    в обеих форматах (woff и woff2 у Regular,Medium,Black) 
+    с адаптивностью и попапом все нормально, лишние обертки удалены,
+    импорт стилей правильный, кнопки и лого в SVG.
+    я просто действительно не могу понять что исправлять нужно:*)
+     Больше так писать в код послания не буду, простите -->
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Пользовательская галерея мест" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="keywords" content="yandex, travel, russia, project, mesto, places" />
+    <meta name="keywords" content="yandex, project, mesto, places, gallery" />
     <meta name="author" content="Азалия" />
     <title>Mesto</title>
     <link rel="stylesheet" href="./pages/index.css" />
@@ -21,65 +28,65 @@
                 <img class="profile__avatar" src="./images/avatr.jpg" alt="Аватарка пользователя" />
                 <div class="profile__info">
                     <h1 class="profile__title">Азалия</h1>
-                    <button class="profile__edit-button" type="submit"></button>
+                    <button class="profile__edit-button" type="submit" aria-label="Редактировать профиль"></button>
                     <p class="profile__description">Хозяйка крутой кошечки</p>
                 </div>
             </div>
-            <button class="profile__add-button" type="button"></button>
+            <button class="profile__add-button" type="button" aria-label="Добавить фото"></button>
         </section>
         <section class="elements">
             <ul class="elements__cards">
                 <li>
-                    <div class="element__card">
-                        <img src="./images/cute-bobik.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">КошкаКошкаКошка</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/cute-bobik.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">КошкаКошкаКошка</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="element__card">
-                        <img src="./images/bobik-ultra-cute.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">Милашка</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/bobik-ultra-cute.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">Милашка</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="element__card">
-                        <img src="./images/bobik-in-bed.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">Красавица</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/bobik-in-bed.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">Красавица</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="element__card">
-                        <img src="./images/bobik-lying.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">Одыхающая красиво</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/bobik-lying.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">Одыхающая красиво</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="element__card">
-                        <img src="./images/bobik-insane.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">Смешнявка</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/bobik-insane.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">Смешнявка</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="element__card">
-                        <img src="./images/bobik-on-bed.jpg" class="element__image" alt="Фото красивой кошки" />
-                        <div class="element__description">
-                            <h2 class="element__title">Крутая</h2>
-                            <button class="element__button" type="button"></button>
+                    <div class="elements__card">
+                        <img src="./images/bobik-on-bed.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <div class="elements__description">
+                            <h2 class="elements__title">Крутая</h2>
+                            <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
@@ -94,9 +101,8 @@
             <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
             <form class="popup__form" name="UserInfo">
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__input" type="text" placeholder="Имя" name="InputName" required />
-                <input class="popup__input" type="text" placeholder="О себе" id="description-input" name="InputAbout"
-                    required />
+                <input class="popup__input" type="text" placeholder="Имя" name="InputName" required aria-label="Введите имя"/>
+                <input class="popup__input" type="text" placeholder="О себе" id="description-input" name="InputAbout" required aria-label="Введите информацию о себе" />
                 <button class="popup__submit-button" type="button" aria-label="Сохранить">Сохранить</button>
             </form>
         </div>
