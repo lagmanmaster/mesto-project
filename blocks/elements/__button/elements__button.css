@@ -8,6 +8,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    background-position: 50%;
 }
 
 .elements__button:hover {
@@ -15,7 +16,7 @@
     transition: .3s ease;
 }
 
-.elements__button:active {
+/* .elements__button:active {
     background: transparent url(../../../images/Vector-active-like.svg);
     opacity: 1;
-}
+} */

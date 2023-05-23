@@ -1,0 +1,16 @@
+.elements__card-bin{
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    background-image: url(../../../images/Bin.svg);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.elements__card-bin:hover {
+    opacity: .6;
+    transition: .3s ease;
+}

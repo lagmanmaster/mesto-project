@@ -1,0 +1,6 @@
+.popup__full{
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    place-items: center;
+}

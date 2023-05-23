@@ -21,16 +21,17 @@
                 <div class="profile__info">
                     <h1 class="profile__title">Азалия</h1>
                     <button class="profile__edit-button" type="submit" aria-label="Редактировать профиль"></button>
-                    <p class="profile__description">Хозяйка крутой кошечки</p>
+                    <p class="profile__description">Кандидат на вылет</p>
                 </div>
             </div>
             <button class="profile__add-button" type="button" aria-label="Добавить фото"></button>
         </section>
         <section class="elements">
-            <ul class="elements__cards">
+            <!-- <ul class="elements__cards">
                 <li>
                     <div class="elements__card">
                         <img src="./images/cute-bobik.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">КошкаКошкаКошка</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
@@ -40,6 +41,7 @@
                 <li>
                     <div class="elements__card">
                         <img src="./images/bobik-ultra-cute.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">Милашка</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
@@ -49,6 +51,7 @@
                 <li>
                     <div class="elements__card">
                         <img src="./images/bobik-in-bed.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">Красавица</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
@@ -58,6 +61,7 @@
                 <li>
                     <div class="elements__card">
                         <img src="./images/bobik-lying.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">Одыхающая красиво</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
@@ -67,6 +71,7 @@
                 <li>
                     <div class="elements__card">
                         <img src="./images/bobik-insane.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">Смешнявка</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
@@ -76,29 +81,63 @@
                 <li>
                     <div class="elements__card">
                         <img src="./images/bobik-on-bed.jpg" class="elements__image" alt="Фото красивой кошки" />
+                        <button aria-label="bin" type="button" class="elements__card-bin"></button>
                         <div class="elements__description">
                             <h2 class="elements__title">Крутая</h2>
                             <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
         </section>
     </main>
     <footer class="footer">
         <p class="footer__copyright">&copy;2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+    <div class="popup popup_type_edit">
         <div class="popup__container">
             <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
-            <form class="popup__form" name="UserInfo">
+            <form action="#" class="popup__form" name="UserInfo_edit">
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__input" type="text" placeholder="Имя" name="InputName" required aria-label="Введите имя"/>
-                <input class="popup__input" type="text" placeholder="О себе" id="description-input" name="InputAbout" required aria-label="Введите информацию о себе" />
-                <button class="popup__submit-button" type="button" aria-label="Сохранить">Сохранить</button>
+                <input class="popup__input popup__input_name" type="text" name="InputName" placeholder="Введите имя" value="">
+                <input class="popup__input popup__input_description" type="text" name="InputDescription" placeholder="Введите краткую информацию о себе" value="">
+                <button type="submit" class="popup__submit-button">Сохранить</button>
             </form>
         </div>
     </div>
+    <div class="popup popup_type_add">
+        <div class="popup__container">
+            <button class="popup__close popup__close-adding" type="button" aria-label="Закрыть окно"></button>
+            <form class="popup__form" name="UserInfo_add" action="#" >
+                <h2 class="popup__title">Новое место</h2>
+                <input class="popup__input popup__input_name popup__input_name-add" type="text" placeholder="Название места" name="InputName" aria-label="Название"/>
+                <input class="popup__input popup__input_description popup__input_description-add" type="text" placeholder="Ссылка на картинку" id="description-input" name="InputDescription" aria-label="Ссылка" />
+                <button class="popup__submit-button popup__save-add_button" type="submit" aria-label="Сохранить">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup_type_zoom">
+        <div class="popup__full popup__container">
+          <button class="popup__close popup__close-adding" type="button" aria-label="Закрыть окно"></button>
+          <figure class="popup__zoom">
+            <img class="popup__image" src="" alt="">
+            <figcaption class="popup__caption"></figcaption>
+          </figure>
+        </div>
+      </div> 
+    <template id="card-template">
+        #document-fragment
+            <li>
+                <div class="elements__card">
+                    <button aria-label="bin" type="button" class="elements__card-bin"></button>
+                    <img class="elements__image" src="" alt="" >
+                    <div class="elements__description">
+                        <h2 class="elements__title"></h2>
+                        <button class="elements__button" type="button" aria-label="Кнопка лайка"></button>
+                    </div>
+                </div>
+            </li>
+    </template>
+    <script src="index.js"></script>
 </body>
-
 </html>
