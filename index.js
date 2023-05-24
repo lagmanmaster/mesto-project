@@ -2,7 +2,7 @@ const popupProfile = document.querySelector(".popup");
 const popupOpenZoom = document.querySelector(".popup_type_zoom");
 const popupAdd = document.querySelector(".popup_type_add");
 const popupEdit = document.querySelector(".popup_type_edit");
-const popupCloseButton = document.querySelectorAll(".popup__close");
+const popupCloseButtons = document.querySelectorAll(".popup__close");
 const popupInputName = document.querySelector(".popup__input_name");
 const popupInputDescription = document.querySelector(".popup__input_description");
 const popupInputNameAdd = document.querySelector(".popup__input_name-add");
@@ -32,7 +32,7 @@ function closePopup(popup) {
 profileAddButton.addEventListener("click", function() {
 	openPopup(popupAdd);
 });
-popupCloseButton.forEach((button) => {
+popupCloseButtons.forEach((button) => {
 	const buttonsPopup = button.closest(".popup");
 	button.addEventListener("click", () => closePopup(buttonsPopup));
 });
@@ -74,26 +74,6 @@ function createCard(cardData) {
 	cardPicture.addEventListener("click", () => zoomImage(name, link));
 	return cardElement;
 }
-const initialCards = [{
-	name: 'Архыз',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-}, {
-	name: 'Челябинская область',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-}, {
-	name: 'Иваново',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-}, {
-	name: 'Камчатка',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-}, {
-	name: 'Холмогорский район',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-}, {
-	name: 'Байкал',
-	link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-}];
-
 function renderCard(cardData, container) {
 	container.prepend(createCard(cardData));
 }

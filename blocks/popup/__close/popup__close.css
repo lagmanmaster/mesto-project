@@ -9,6 +9,7 @@
   top: -40px;
   right: -40px;
   cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 .popup__close:hover {
@@ -16,7 +17,7 @@
   transition: .3s ease;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .popup__close {
     right: 0;
     width: 20px;

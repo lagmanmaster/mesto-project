@@ -99,8 +99,8 @@
             <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
             <form action="#" class="popup__form" name="UserInfo_edit">
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__input popup__input_name" type="text" name="InputName" placeholder="Введите имя" value="">
-                <input class="popup__input popup__input_description" type="text" name="InputDescription" placeholder="Введите краткую информацию о себе" value="">
+                <input class="popup__input popup__input_name" type="text" name="InputName" placeholder="Введите имя" value="" required>
+                <input class="popup__input popup__input_description" type="text" name="InputDescription" placeholder="Введите краткую информацию о себе" value="" required>
                 <button type="submit" class="popup__submit-button">Сохранить</button>
             </form>
         </div>
@@ -110,14 +110,14 @@
             <button class="popup__close popup__close-adding" type="button" aria-label="Закрыть окно"></button>
             <form class="popup__form" name="UserInfo_add" action="#" >
                 <h2 class="popup__title">Новое место</h2>
-                <input class="popup__input popup__input_name popup__input_name-add" type="text" placeholder="Название места" name="InputName" aria-label="Название"/>
-                <input class="popup__input popup__input_description popup__input_description-add" type="text" placeholder="Ссылка на картинку" id="description-input" name="InputDescription" aria-label="Ссылка" />
+                <input class="popup__input popup__input_name popup__input_name-add" type="text" placeholder="Название места" name="InputName" aria-label="Название" required/>
+                <input class="popup__input popup__input_description popup__input_description-add" type="text" placeholder="Ссылка на картинку" id="description-input" name="InputDescription" aria-label="Ссылка" required/>
                 <button class="popup__submit-button popup__save-add_button" type="submit" aria-label="Сохранить">Сохранить</button>
             </form>
         </div>
     </div>
     <div class="popup popup_type_zoom">
-        <div class="popup__full popup__container">
+        <div class="popup__full">
           <button class="popup__close popup__close-adding" type="button" aria-label="Закрыть окно"></button>
           <figure class="popup__zoom">
             <img class="popup__image" src="" alt="">
@@ -138,6 +138,7 @@
                 </div>
             </li>
     </template>
+    <script src="cards.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
